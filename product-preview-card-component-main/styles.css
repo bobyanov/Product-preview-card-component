@@ -1,0 +1,159 @@
+body {
+	background-color: hsl(30, 38%, 92%);
+	font-family: Montserrat;
+}
+
+.container {
+	background-color: white;
+	width: 800px;
+	height: 680px;
+	display: flex;
+	position: relative;
+	left: 500px;
+	top: 140px;
+	border: 0px;
+	border-radius: 20px;
+}
+.image {
+	display: flex;
+	border: 0px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	height: 680px;
+	margin-right: 35px;
+	width: 400px;
+}
+#Perfume {
+	color: hsl(228, 12%, 48%);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 38px;
+	font-size: 22px;
+	letter-spacing: 7px;
+	left: 15px;
+}
+#Name {
+	font-size: 42px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	top: 100px;
+	right: 150px;
+	width: 400px;
+	font-family: Fraunces;
+	font-weight: 700;
+}
+#Description {
+	font-size: 20px;
+	position: absolute;
+	display: block;
+	top: 260px;
+	left: 450px;
+	width: 400px;
+	line-height: 37px;
+	color: hsl(228, 12%, 48%);
+}
+#price {
+	font-size: 36px;
+	position: absolute;
+	display: block;
+	top: 480px;
+	left: 450px;
+	width: 400px;
+	line-height: 37px;
+	color: hsl(158, 36%, 37%);
+	font-family: Fraunces;
+	font-weight: 700;
+}
+#oldprice {
+	font-size: 18px;
+	position: absolute;
+	display: block;
+	top: 480px;
+	left: 620px;
+	width: 400px;
+	line-height: 37px;
+	color: hsl(228, 12%, 48%);
+}
+.CartButton {
+	position: absolute;
+	width: 300px;
+	height: 75px;
+	background-color: hsl(158, 36%, 37%);
+	border: 0px;
+	border-radius: 15px;
+	left: 955px;
+}
+#cart {
+	position: absolute;
+	left: 80px;
+	width: 25px;
+	top: 22px;
+}
+.CartButton b {
+	position: absolute;
+	left: 120px;
+	top: 25px;
+	color: white;
+	font-size: 18px;
+}
+
+.CartButton:hover {
+	position: absolute;
+	width: 300px;
+	height: 75px;
+	background-color: hsl(212, 21%, 14%);
+	cursor: pointer;
+	border: 0px;
+	border-radius: 15px;
+	left: 955px;
+}
+
+@media (max-width: 870px) {
+	.container {
+		width: 370px;
+		height: 850px;
+		left: 20px;
+		top: 80px;
+	}
+	.image {
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 0px;
+		margin-right: 0px;
+		object-fit: cover;
+		height: 330px;
+		width: 370px;
+	}
+	#Perfume {
+		top: 350px;
+		left: -350px;
+		font-size: 18px;
+	}
+	#Name {
+		top: 390px;
+		left: -490px;
+		font-size: 26px;
+	}
+	#Description {
+		top: 480px;
+		left: 0px;
+		font-size: 17px;
+		margin-left: 22px;
+	}
+	#price {
+		top: 670px;
+		left: 22px;
+	}
+	#oldprice {
+		top: 670px;
+		left: 200px;
+	}
+	.CartButton {
+		top: 830px;
+		left: 50px;
+		width: 320px;
+		height: 70px;
+	}
+}
